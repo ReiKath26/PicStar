@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">PicStar</string>
+    <string name="title_activity_home_loggedin">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_explore">Filter Beta</string>
+    <string name="title_profile">Profile</string>
+
+    <string-array name="Categories">
+        <item>Foodie</item>
+        <item>Landscape</item>
+        <item>Sports</item>
+        <item>Snapshots</item>
+        <item>Animals</item>
+        <item>Others</item>
+    </string-array>
+</resources>
