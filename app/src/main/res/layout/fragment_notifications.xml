@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_rectangle">
+
+
+        <ImageView
+            android:id="@+id/account_pic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            android:layout_below="@id/log_out_btn">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/username_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="40dp"
+            android:textColor="#C9C9C9"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/account_pic"
+            android:layout_below="@id/log_out_btn"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/log_out_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:background="@drawable/rounded_rect_black"
+            android:textColor="@android:color/white"
+            android:layout_alignParentEnd="true">
+
+        </Button>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_layout">
+
+        <Button
+            android:id="@+id/upload_btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Upload Footage"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_rectangle">
+
+        </Button>
+
+        <TextView
+            android:id="@+id/your_footages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Footages:"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/upload_btn">
+
+        </TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/footages_rv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/your_footages"
+            android:layout_marginTop="20dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

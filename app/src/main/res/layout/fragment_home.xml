@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/timeanddate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time and Date">
+
+    </TextView>
+    <TextView
+        android:id="@+id/texttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What are you looking for today?"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif">
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/texttext"/>
+    
+    <TextView
+        android:id="@+id/you_might"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You might like"
+        android:layout_below="@id/recycler_view"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="#8D1313">
+
+    </TextView>
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/item_picture_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/you_might">
+        
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

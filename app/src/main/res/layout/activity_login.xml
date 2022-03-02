@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="123dp"
+        android:layout_height="93dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ProgressBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="50dp"
+        android:textColor="#8D1313"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:layout_gravity="center">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to PicStar"
+        android:textSize="20dp"
+        android:layout_gravity="center">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/email_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your email here"
+        android:textSize="20dp"
+        android:textColor="#8D1313"
+        android:layout_gravity="center"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="10dp">
+
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/password_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter password here"
+        android:textSize="20dp"
+        android:textColor="#8D1313"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/login_account"
+        android:layout_marginTop="20dp"
+        android:layout_width="700px"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:backgroundTint="#8D1313"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center">
+
+    </Button>
+
+    <Button
+        android:id="@+id/login_huawei"
+        android:layout_width="700px"
+        android:layout_height="wrap_content"
+        android:text="Login with Huawei ID"
+        android:layout_gravity="center"
+        android:textColor="#8D1313">
+
+
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        android:textSize="15dp"
+        android:textColor="#8D1313"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/register_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register Here"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="#8D1313"
+        android:layout_gravity="center">
+
+    </TextView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

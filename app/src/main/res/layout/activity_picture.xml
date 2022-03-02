@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Picture"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/photo_detail"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/photo_title_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:textSize="70px"
+            android:textStyle="bold"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="30px"
+            android:textColor="#8D1313">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:src="@drawable/ic_baseline_account_circle_24">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/username_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="40px"
+            android:layout_marginTop="30px"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="20px">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_download"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Download Image"
+        android:layout_marginTop="20dp"
+        android:background="#8D1313"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center">
+    </Button>
+
+    <Button
+        android:id="@+id/premium_download"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Get Premium to Download"
+        android:background="@android:color/black"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"></Button>
+
+</LinearLayout>
