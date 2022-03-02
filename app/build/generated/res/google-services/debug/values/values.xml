@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">907612747141-tp3tr46o7cjnbsnsr1d379u9a7h8ovo8.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">907612747141</string>
+    <string name="google_api_key" translatable="false">AIzaSyBS0spI1BEuxqGjcjb24NoqJ_YQ9xambPw</string>
+    <string name="google_app_id" translatable="false">1:907612747141:android:af00535a3339da6ada80ec</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBS0spI1BEuxqGjcjb24NoqJ_YQ9xambPw</string>
+    <string name="google_storage_bucket" translatable="false">picstar-db.appspot.com</string>
+    <string name="project_id" translatable="false">picstar-db</string>
+</resources>
